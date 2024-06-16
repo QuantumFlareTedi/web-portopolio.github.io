@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+}
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.navigasi {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+}
+/* Default hidden state */
+#mainNav.hidden {
+    display: none;
+}
+
+/* Styling for navigation */
+#mainNav {
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 1000;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+#mainNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mainNav ul li {
+    margin-bottom: 10px;
+}
+
+#mainNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#mainNav ul li a:hover {
+    background-color: #555;
+}
+.ul {
+  display: flex;
+  gap: 20px;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.card{
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  margin: 30px;
+}
+.img{
+  max-width: 100%;
+  border-radius: 50%;
+}
+@media screen and (max-width:480px){
+  .ul {
+    display: none;
+  }
+  .navigasi {
+    align-items: center;
+  }
+  .garis {
+    width: 30px;
+    height: 5px;
+    margin: 1px;
+    background-color: black;
+    animation-name: barside;
+  }
+  .active{
+    display: block;
+  }
+}
